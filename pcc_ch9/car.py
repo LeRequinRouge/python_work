@@ -33,6 +33,32 @@ class Car:
         """Add the given amount to the odometer reading."""
         self.odometer_reading += miles
 
+    def fill_gas_tank(self):
+        """Fill the tank!"""
+        print("Gas tank is now full!")
+
+
+class Battery:
+    """A simple attempt to represent a battery for an electric car."""
+
+    def __init__(self, battery_size=75, travel_range=0):
+        """Initialize the battery's attributes."""
+        self.battery_size = battery_size
+        self.travel_range = travel_range
+
+    def describe_battery(self):
+        """Print a statement describing the battery size."""
+        print(f"This car has a {self.battery_size}-kWh battery.")
+
+    def get_range(self):
+        """Print a statement about the range this battery provides."""
+        if self.battery_size == 75:
+            travel_range = 260
+        elif self.battery_size == 100:
+            travel_range = 315
+
+        print(f"This car can go about {travel_range} miles on a full charge.")
+
 
 my_new_car = Car('audi', 'a4', 2019)
 print(my_new_car.get_descriptive_name())
