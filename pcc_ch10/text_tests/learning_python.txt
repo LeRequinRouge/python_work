@@ -1,0 +1,3 @@
+I've learned the syntax of the Python programming language.
+Along with refreshing my understanding of object-oriented
+programming, classes, and manipulating outside file data.
